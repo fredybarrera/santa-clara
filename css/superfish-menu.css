@@ -1,0 +1,195 @@
+/* ======= Main menu variables ======= */
+/* ======= Sub menus common variables ======= */
+/* ======= First level sub menu variables ======= */
+nav {
+  margin-top: 15px;
+  float: none;
+}
+/* Main menu styles
+========================================================*/
+.sf-menu > li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+.sf-menu > li + li {
+  margin-left: 93px;
+}
+.sf-menu > li + li:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 1px;
+  width: 1px;
+  height: 11px;
+  background: #634d38;
+  left: -39px;
+}
+@media (max-width: 1199px) {
+  .sf-menu > li + li {
+    margin-left: 30px;
+  }
+  .sf-menu > li + li:before {
+    display: none;
+  }
+}
+@media (max-width: 979px) {
+  .sf-menu > li + li {
+    margin-left: 10px;
+  }
+}
+.sf-menu > li > .sf-with-ul:after {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: "\f0d7";
+  color: #ffffff;
+  bottom: -12px;
+  left: 50%;
+  margin-left: -3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu > li > a {
+  display: block;
+  text-transform: uppercase;
+  font: 400 14px/14px "Asap", sans-serif;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #ffffff;
+}
+@media (max-width: 979px) {
+  .sf-menu > li > a {
+    font-size: 12px;
+  }
+}
+.sf-menu > li > a:hover {
+  color: #c55e24;
+}
+.sf-menu .sfHover > a {
+  color: #c55e24;
+}
+.sf-menu .sfHover > a:after {
+  color: #c55e24;
+}
+.sf-menu > li.current > a {
+  color: #c55e24;
+}
+.sf-menu > li.current > a:after {
+  color: #c55e24;
+}
+/* First level sub-menu styles
+========================================================*/
+.sf-menu ul {
+  display: none;
+  min-width: 123px;
+  font: 400 14px/28px "Merriweather Sans", sans-serif;
+  position: absolute;
+  top: 57px;
+  left: 50%;
+  margin-left: -61.5px;
+  background: #f9f7f2;
+  text-align: center;
+  padding: 10px 0 7px 0;
+  z-index: 2;
+  border: 1px solid #e5e1d6;
+}
+.sf-menu ul:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 18px;
+  height: 10px;
+  overflow: hidden;
+  background: url(../images/triangle1.png) no-repeat center top;
+  top: -10px;
+  left: 50%;
+  margin-left: -9px;
+}
+.sf-menu ul li {
+  position: relative;
+  display: block;
+}
+.sf-menu ul li > .sf-with-ul:after {
+  display: block;
+  font-family: FontAwesome;
+  font-size: 10px;
+  position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: default;
+  content: "\f0da";
+  color: #312420;
+  bottom: -1px;
+  right: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sf-menu ul li a {
+  display: block;
+  color: #312420;
+  text-transform: uppercase;
+}
+.sf-menu ul li a:hover {
+  color: #ffffff;
+  background: #c55e24;
+}
+.sf-menu ul li + li {
+  border-top: 1px solid #eaeaea;
+}
+.sf-menu ul > .sfHover > a {
+  background: #c55e24;
+  color: #ffffff;
+}
+.sf-menu ul > .sfHover > a:after {
+  color: #ffffff;
+}
+/* Second level sub-menu styles
+========================================================*/
+.sf-menu ul ul {
+  position: absolute;
+  top: -11px;
+  left: 123px;
+  margin-left: 0;
+  z-index: 4;
+}
+.sf-menu ul ul:before {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    float: none;
+  }
+  .select-menu {
+    border-radius: none;
+    display: block;
+    text-transform: capitalize;
+    float: none;
+    color: #c55e24;
+    width: 100%;
+    background: #ffffff;
+    font: 400 14px/14px "Asap", sans-serif;
+    text-align: left;
+    border: 1px solid #c1c1c1;
+    padding: 2px 0;
+    position: relative;
+  }
+  .select-menu option {
+    text-align: left;
+    position: relative;
+  }
+}
+/*Core variables and mixins*/
